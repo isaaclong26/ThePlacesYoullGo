@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
+import Nav from "react-bootstrap/Nav";
+import Button from "react-bootstrap/Button";
 import "./css/navbarstyle.css";
 
 export default function Header({ currentPage, handlePageChange }) {
