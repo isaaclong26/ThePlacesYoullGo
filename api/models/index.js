@@ -1,4 +1,4 @@
-const Matchup = require('./Matchup');
+const List = require('./List');
 const User = require('./User');
 
-module.exports = {  Matchup, User };
+module.exports = {  List, User };

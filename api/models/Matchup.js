@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-const matchupSchema = new Schema({
+const bucketSchema = new Schema({
   tech1: {
     type: String,
     required: true,
@@ -19,6 +19,6 @@ const matchupSchema = new Schema({
   },
 });
 
-const Matchup = model('Matchup', matchupSchema);
+const List = model('List', bucketSchema);
 
-module.exports = Matchup;
+module.exports = List;
