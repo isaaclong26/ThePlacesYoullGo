@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
-import "./navbarstyle.css";
+import Nav from "react-bootstrap/Nav";
+import Button from "react-bootstrap/Button";
+import "./css/navbarstyle.css";
 
 export default function Header({ currentPage, handlePageChange }) {
   return (
@@ -41,7 +41,7 @@ export default function Header({ currentPage, handlePageChange }) {
           <Nav.Item>
             <Button variant="outline-secondary"
             className="button-login"
-              href="#login"
+              href="/login"
               onClick={() => handlePageChange("Login")}
             >
               Login
