@@ -1,32 +1,11 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
+import Nav from 'react-bootstrap/Nav';
 import "./navbarstyle.css";
 
 export default function Header({ currentPage, handlePageChange }) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
-      <a
-        className="navbar-brand fs-2 fw-bold"
-        href="#/"
-        onClick={() => handlePageChange("Places")}
-      >
-        The Places You'll Go
-      </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarToggler8"
-        aria-controls="navbarToggler8"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarToggler8">
-        <ul className="navbar-nav">
-          <li className="nav-item">
+    <Nav className="justify-content-center">
+          <Nav.Item>
             <a
               className="nav-link"
               href="#places"
@@ -34,8 +13,8 @@ export default function Header({ currentPage, handlePageChange }) {
             >
               Places
             </a>
-          </li>
-          <li className="nav-item">
+          </Nav.Item>
+          <Nav.Item>
             <a
               className="nav-link"
               href="#profile"
@@ -43,8 +22,8 @@ export default function Header({ currentPage, handlePageChange }) {
             >
               Profile
             </a>
-          </li>
-          <li className="nav-item">
+          </Nav.Item>
+          <Nav.Item>
             <a
               className="nav-link"
               href="#bucketlist"
@@ -52,8 +31,8 @@ export default function Header({ currentPage, handlePageChange }) {
             >
               Bucket List
             </a>
-          </li>
-          <li className="nav-item">
+          </Nav.Item>
+          <Nav.Item>
             <a
               className="nav-link"
               href="#login"
@@ -61,9 +40,7 @@ export default function Header({ currentPage, handlePageChange }) {
             >
               Login
             </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+          </Nav.Item>
+    </Nav>
   );
 }
