@@ -32,8 +32,8 @@ export default function Header({ currentPage, handlePageChange }) {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link
-              href="#bucketlist"
-              onClick={() => handlePageChange("Bucket List")}
+              href="#bucket"
+              onClick={() => handlePageChange("Bucket")}
             >
               Bucket List
             </Nav.Link>
