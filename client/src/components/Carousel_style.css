@@ -16,17 +16,17 @@ h1 a, h1 a:hover {
     height: 800px;
 }
 .img1{
-    background-image: url(./images/brisbane.jpg);
+    background-image: url(./images/tokyo.jpg);
     background-position: center;
     background-size: cover;
 }
 .img2{
-    background-image: url(./images/paris.jpg);
+    background-image: url(./images/brisbane.jpg);
     background-position: center;
     background-size: cover;
 }
 .img3{
-    background-image: url(./images/tokyo.jpg);
+    background-image: url(./images/paris.jpg);
     background-position: center;
     background-size: cover;
 }
