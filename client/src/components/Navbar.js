@@ -41,7 +41,7 @@ export default function Header({ currentPage, handlePageChange }) {
           <Nav.Item>
             <Button variant="outline-secondary"
             className="button-login"
-              href="#login"
+              href="/login"
               onClick={() => handlePageChange("Login")}
             >
               Login
