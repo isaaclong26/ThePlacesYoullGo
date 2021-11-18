@@ -3,8 +3,11 @@
 --blue: var(#1c4294);
 }
 
-.button-login {
-  position: relative;
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
 }
 
 /* .navbar .navbar-nav .nav-link{
