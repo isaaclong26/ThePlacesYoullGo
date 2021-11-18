@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css"
+import "./Carousel_style.css"
 
 function Carousel(props) {
   return (
