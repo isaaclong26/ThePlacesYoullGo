@@ -1,12 +1,14 @@
 :root{
 --white:var(#ffffff);
 --blue: var(#1c4294);
+}
 
+.nav-link {
+  color: black;
 }
-.navbar{
-    background-color: skyblue;
-}
-.navbar .navbar-nav .nav-link{
+
+
+/* .navbar .navbar-nav .nav-link{
     color: #000;
     font-size: 1.1em;
 }
@@ -36,4 +38,4 @@
   .navbar .navbar-nav .nav-link {
     padding: 1em 0.7em;
     transition: all 0.5s;
-  }
+  } */
