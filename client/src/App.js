@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Bucket from './pages/Bucket';
+import Profile from './pages/Profile';
 import Places from './pages/Places';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -21,7 +22,9 @@ function App() {
       <Route exact path = "/" element={<Home />}/>
       <Route exact path = "/login" element={<Login />}/>
       <Route exact path = "/bucket" element={<Bucket />}/>
+      <Route exact path = "/profile" element={<Profile />}/>
       <Route exact path = "/places" element={<Places />}/>
+
       </Routes>
       <Footer />
       </Router>
