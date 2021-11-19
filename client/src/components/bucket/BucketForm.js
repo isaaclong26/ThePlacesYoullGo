@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from "react-bootstrap/Button";
 
 function BucketForm(props) {
   const [input, setInput] = useState('');
@@ -41,9 +42,9 @@ function BucketForm(props) {
           onChange={handleChange}
         ></input>
         <div className="dropdown">
-          <button className={`dropbtn ${eagerness}`}>
+          <p variant="info" className={`dropbtn ${eagerness}`}>
             {eagerness || 'Priority'}
-          </button>
+          </p>
           <div className="dropdown-content">
             <p onClick={() => setEagerness(eagernessLevel[0])}>Must do</p>
             <p onClick={() => setEagerness(eagernessLevel[1])}>Want to do</p>

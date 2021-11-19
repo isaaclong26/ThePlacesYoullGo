@@ -7,10 +7,6 @@ function BucketList() {
 
   // Function to add a bucket list item
   const addBucketItem = (item) => {
-    console.log(
-      '🚀 ~ file: BucketList.js ~ line 10 ~ addBucketItem ~ item',
-      item
-    );
     // Check to see if the item text is empty
     if (!item.text) {
       return;
