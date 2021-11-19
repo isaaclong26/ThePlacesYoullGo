@@ -2,7 +2,6 @@ import React from 'react';
 
 const styles ={
     footerCont: {
-        position: "fixed",
         bottom: 0,
         width: "100%",
         textAlign: "center"
