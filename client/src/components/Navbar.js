@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import "./css/navbarstyle.css";
+import Auth from '../utils/auth';
 
 export default function Header({ currentPage, handlePageChange }) {
   return (
@@ -22,6 +23,8 @@ export default function Header({ currentPage, handlePageChange }) {
               Places
             </Nav.Link>
           </Nav.Item>
+          {Auth.loggedIn() ? (
+            <>
           <Nav.Item>
             <Nav.Link
               href="#profile"
@@ -38,6 +41,9 @@ export default function Header({ currentPage, handlePageChange }) {
               Bucket List
             </Nav.Link>
           </Nav.Item>
+          </>
+          ) : (
+            <>
           <Nav.Item>
             <Button variant="outline-secondary"
             className="button-login"
@@ -47,6 +53,8 @@ export default function Header({ currentPage, handlePageChange }) {
               Login
             </Button>
           </Nav.Item>
+          </>
+          )}
     </Nav>
   );
 }
