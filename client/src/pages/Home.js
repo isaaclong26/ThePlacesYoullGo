@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "../components/Carousel";
-import { Card, ListGroup } from "react-bootstrap";
+import { ListGroup } from "react-bootstrap";
 import "../components/css/home_style.css";
 function Home() {
   return (
