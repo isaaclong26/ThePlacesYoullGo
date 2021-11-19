@@ -14,7 +14,7 @@ function Home() {
                 <Card.Body>
                     <Card.Text>With this app, you and your traveling friends can :
                         <ListGroup variant="flush">
-                            <ListGroup.Item>Login to check out  <strong> vacation spots,</strong> destinations, <strong> and attractions</strong>  you all would like to explore.</ListGroup.Item>
+                            <ListGroup.Item>Login to check out  <strong> vacation spots,</strong> <strong> destinations </strong>, and <strong> attractions</strong>  you all would like to explore.</ListGroup.Item>
                             <ListGroup.Item>View your saved destinations.</ListGroup.Item>
                             <ListGroup.Item> Scroll through recommend destinations.</ListGroup.Item>
                             <ListGroup.Item>Save your favorite destinations to a Bucket List!</ListGroup.Item>

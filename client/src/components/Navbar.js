@@ -5,7 +5,7 @@ import "./css/navbarstyle.css";
 
 export default function Header({ currentPage, handlePageChange }) {
   return (
-    <Nav fixed="top" className="justify-content-center">
+    <Nav className="justify-content-center main-nav">
       <Nav.Item>
             <Nav.Link
               href="/"
@@ -32,8 +32,8 @@ export default function Header({ currentPage, handlePageChange }) {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link
-              href="#bucketlist"
-              onClick={() => handlePageChange("Bucket List")}
+              href="/bucket"
+              onClick={() => handlePageChange("Bucket")}
             >
               Bucket List
             </Nav.Link>
