@@ -17,7 +17,7 @@ export default function Header({ currentPage, handlePageChange }) {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link
-              href="#places"
+              href="/places"
               onClick={() => handlePageChange("Places")}
             >
               Places
@@ -27,7 +27,7 @@ export default function Header({ currentPage, handlePageChange }) {
             <>
           <Nav.Item>
             <Nav.Link
-              href="#profile"
+              href="/profile"
               onClick={() => handlePageChange("Profile")}
             >
               Profile
