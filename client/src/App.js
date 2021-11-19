@@ -19,7 +19,7 @@ function App() {
       <Routes>
       <Route exact path = "/" element={<Home />}/>
       <Route exact path = "/login" element={<Login />}/>
-      <Route exact path = "/buket" element={<Bucket />}/>
+      <Route exact path = "/bucket" element={<Bucket />}/>
       </Routes>
       <Footer />
       </Router>
