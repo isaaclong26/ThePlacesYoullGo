@@ -36,7 +36,9 @@ h3 {
 }
 
 .bucket-form {
-  margin-bottom: 32px;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .bucket-input {
@@ -46,7 +48,7 @@ h3 {
   outline: none;
   width: 50%;
   background: transparent;
-  color: #fff;
+  color: black;
 }
 
 .bucket-input::placeholder {

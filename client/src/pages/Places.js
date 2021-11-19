@@ -2,6 +2,7 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "../components/css/Places_style.css";
+import Auth from '../utils/auth';
 
 function Places() {
     return (
@@ -14,9 +15,18 @@ function Places() {
                   <Button type="submit" className="mb-2">Submit</Button>
               </Form>
             </div>
-            <div>
-                <h1>My Places</h1>
-            </div>
+            
+            {/* Shows your saved places only when you are logged in */}
+            {Auth.loggedIn() ? (
+                <>
+                    <div>
+                        <h1>My Places</h1>
+                    </div>
+                </>
+            ) : (
+                <>
+                </>
+            )}
         </div>
     );
 }
