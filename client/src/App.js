@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Bucket from './pages/Bucket';
@@ -45,7 +45,7 @@ const client = new ApolloClient({
 // import Login from "./components/LoginRoute";
 
 function App() {
-  const [token, setToken] = useState();
+  // const [token, setToken] = useState();
   return (
     <ApolloProvider client={client}>
     <div>
