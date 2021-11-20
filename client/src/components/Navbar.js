@@ -2,9 +2,8 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import "./css/navbarstyle.css";
-import Auth from '../utils/auth';
 
-export default function Header({ currentPage, handlePageChange }) {
+export default function Header({ handlePageChange }) {
   return (
     <Nav className="justify-content-center main-nav">
       <Nav.Item>

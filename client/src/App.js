@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Bucket from './pages/Bucket';
@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import Login from "./components/LoginRoute";
 
 function App() {
-  const [token, setToken] = useState();
+  // const [token, setToken] = useState();
   return (
     <div>
       <Router>
