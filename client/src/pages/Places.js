@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "../components/css/Places_style.css";
 import Auth from '../utils/auth';
 import { searchCities } from '../utils/API';
-import { Form, Button, Card, CardColumns } from 'react-bootstrap';
+import { Form, Button, Card } from 'react-bootstrap';
 
 const SearchCity = () => {
     const [searchedCities, setSearchedCities] = useState([]);
