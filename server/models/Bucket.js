@@ -14,3 +14,5 @@ const bucketSchema = new Schema({
 })
 
 const Bucket = model("Bucket", bucketSchema )
+
+module.exports = Bucket;
