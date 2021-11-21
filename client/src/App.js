@@ -3,7 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Bucket from './pages/Bucket';
-import Profile from './pages/Profile';
+import MyPlaces from './pages/MyPlaces';
 import Places from './pages/Places';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -65,8 +65,8 @@ function App() {
       <Route exact path = "/bucket" >
       <Bucket />
       </Route>
-      <Route exact path = "/profile" >
-      <Profile />
+      <Route exact path = "/myplaces" >
+      <MyPlaces />
       </Route>
       <Route exact path = "/places" >
       <Places />
