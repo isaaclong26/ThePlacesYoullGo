@@ -6,10 +6,4 @@ export const searchCities = (query) => {
             'x-rapidapi-key': '8da32efd36msh11a150c1fbd2094p137c85jsnce6ceda52200'
         }
     })
-    .then(response => {
-        console.log(response);
-    })
-    .catch(err => {
-        console.error(err);
-    });
 }

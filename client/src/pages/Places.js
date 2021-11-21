@@ -15,7 +15,6 @@ const SearchCity = () => {
         if(!searchInput) {
             return false
         }
-
         try {
             const response = await searchCities(searchInput);
             if (!response.ok) {
@@ -25,7 +24,7 @@ const SearchCity = () => {
 
             const cityData = items.map((city) => ({
                 cityId: city.id,
-                city: city.city,
+                city: city.name,
                 country: city.country,
                 population: city.population
             }));
