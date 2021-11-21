@@ -24,3 +24,30 @@ export const ADD_USER = gql`
   }
 `;
 
+export const SAVE_CITY = gql`
+    mutation saveCity($city: [String], $country: String, $population: Number) {
+        saveCity(city: $city, country: $country, population: $population) {
+            _id
+            username
+            savedCities {
+              city
+              country
+              population
+            }
+        }
+    }
+`;
+
+export const REMOVE_CITY = gql`
+    mutation removeCity($cityId:String!) {
+        removeCity(cityId: $cityId) {
+            username
+            savedCities {
+                city
+                country
+                population
+            }
+        }
+    }
+`;
+

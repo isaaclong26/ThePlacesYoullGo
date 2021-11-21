@@ -15,7 +15,7 @@ const citySchema = new Schema({
     required: true,
   },
   population: {
-    type: String,
+    type: Number,
   }
 });
 
