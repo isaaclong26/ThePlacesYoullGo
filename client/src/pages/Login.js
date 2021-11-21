@@ -6,7 +6,11 @@ import Auth from '../utils/auth';
 import { LOGIN_USER } from '../utils/mutations';
 import { useMutation } from '@apollo/react-hooks';
 
+import Auth from '../utils/auth';
 
+const Login = (props) => {
+  const [formState, setFormState] = useState({ email: '', password: '' });
+  const [login, { error, data }] = useMutation(LOGIN_USER);
 
 const LoginForm = (props) => {
   const [userFormData, setUserFormData] = useState({ email: '', password: '' });
