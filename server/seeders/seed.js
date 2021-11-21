@@ -2,7 +2,7 @@ const db = require('../config/connection');
 const { User, Bucket } = require('../models');
 const usersSeeds = require('./usersSeeds.json');
 
-const userData = require('./userSeeds.json');
+const userData = require('./usersSeeds.json');
 const bucketData = require('./bucketSeeds.json');
 
 const seedDatabase = async () => {
