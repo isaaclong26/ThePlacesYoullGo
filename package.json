@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
-    "apollo-boost": "^0.4.9"
+    "apollo-boost": "^0.4.9",
+    "seed": "^0.4.4"
   }
 }
