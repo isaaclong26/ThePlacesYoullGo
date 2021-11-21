@@ -20,9 +20,10 @@ const SearchCity = () => {
             if (!response.ok) {
                 throw new Error('Something went wrong!');
             }
-            const { items } = await response.json();
+            console.log(response);
+            const { data } = await response.json();
 
-            const cityData = items.map((city) => ({
+            const cityData = data.map((city) => ({
                 cityId: city.id,
                 city: city.name,
                 country: city.country,
