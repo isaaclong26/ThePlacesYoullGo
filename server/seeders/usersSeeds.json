@@ -1,22 +1,22 @@
 [
-    {
-      "username": "KiyonaBentley",
-      "email": "test@test.com",
-      "password": "password01"
-    },
-    {
-        "username": "MollySingmaster",
-        "email": "test2@test.com",
-        "password": "password02"
-      },
-      {
-        "username": "IsaacLong",
-        "email": "test3@test.com",
-        "password": "password03"
-      },
-      {
-        "username": "SavionElseyWilliams",
-        "email": "test4@test.com",
-        "password": "password04"
-      }
+  {
+    "username": "KiyonaBentley",
+    "email": "test@test.com",
+    "password": "password01"
+  },
+  {
+    "username": "MollySingmaster",
+    "email": "test2@test.com",
+    "password": "password02"
+  },
+  {
+    "username": "IsaacLong",
+    "email": "test3@test.com",
+    "password": "password03"
+  },
+  {
+    "username": "SavionElseyWilliams",
+    "email": "test4@test.com",
+    "password": "password04"
+  }
 ]
