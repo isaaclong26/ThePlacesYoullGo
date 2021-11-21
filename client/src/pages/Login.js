@@ -52,7 +52,7 @@ const LoginForm = (props) => {
         <Form.Group size="lg" controlId="email">
           <Form.Label htmlFor='email'>Email</Form.Label>
           <Form.Control
-            placeholder='Your email'
+            placeholder='Email'
             name='email'
             type='text'
             value={userFormData.email}
@@ -64,7 +64,8 @@ const LoginForm = (props) => {
         <Form.Group size="lg" controlId="password">
           <Form.Label htmlFor="password">Password</Form.Label>
           <Form.Control
-            type="password"
+          placeholder='Password'
+            type='password'
             name='password'
             value={userFormData.password}
             onChange={handleInputChange}
@@ -81,3 +82,5 @@ const LoginForm = (props) => {
 }
 
 export default LoginForm;
+
+
