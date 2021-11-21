@@ -1,10 +1,5 @@
 const User = require("./User");
 const Bucket = require("./Bucket");
+const Places = require("./Places");
 
-User.hasMany(Bucket, {
-    onDelete: 'CASCADE'
-});
-
-Bucket.belongsTo(User);
-
-module.exports = { User, Bucket };
+module.exports = { User, Bucket, Places };
