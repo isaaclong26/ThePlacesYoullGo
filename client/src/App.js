@@ -2,7 +2,6 @@ import './App.css';
 // import React, { useState } from 'react';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Signup from './pages/Singup';
 import Bucket from './pages/Bucket';
 import Profile from './pages/Profile';
 import Places from './pages/Places';
@@ -43,17 +42,7 @@ const client = new ApolloClient({
 });
 
 
-const client = new ApolloClient({
-  request: operation => {
-    const token = localStorage.getItem('id_token');
-    operation.setContext({
-      headers: {
-        authorization: token ? `Bearer ${token}` : ''
-      }
-    });
-  },
-  uri: '/graphql'
-})
+
 
 function App() {
   return (
