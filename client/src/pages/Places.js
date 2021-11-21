@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
+import { useMutation } from '@apollo/client';
 import "../components/css/Places_style.css";
+import {SAVE_CITY} from '../utils/mutations';
 import Auth from '../utils/auth';
 import { searchCities } from '../utils/API';
 import { Form, Button, Card } from 'react-bootstrap';
+import { saveCityIds, getSavedCityIds } from '../utils/localstorage';
 
 const SearchCity = () => {
     const [searchedCities, setSearchedCities] = useState([]);
 
     const [searchInput, setSearchInput] = useState('');
+
+    const [savedCityIds, setSavedCityIds] = useState(getSavedCityIds());
+
+    const [saveCity, {error}] = useMutation(SAVE_CITY);
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
@@ -37,6 +44,20 @@ const SearchCity = () => {
         }
     };
 
+    const handleSaveCity = async (cityId) => {
+        const cityToSave = searchedCities.find((city) => city.cityId === cityId);
+    
+        try {
+          await saveCity({
+            variables: { ...cityToSave}
+          });
+    
+          setSavedCityIds([...savedCityIds, cityToSave.cityId]);
+        } catch (err) {
+          console.error(err);
+        }
+      };
+
     return (
         <div className="searchBar">
             <div>
@@ -60,22 +81,12 @@ const SearchCity = () => {
                                 <Card.Title>{city.city}</Card.Title>
                                 <p>Country: {city.country}</p>
                                 <p>Population: {city.population}</p>
+                                <Button onClick={() => handleSaveCity(city.cityId)}>Save</Button>
                             </Card.Body>
                         </Card>
                     )
                 })}
             </div>
-            {/* Shows your saved places only when you are logged in */}
-            {Auth.loggedIn() ? (
-                <>
-                    <div>
-                        <h1>My Places</h1>
-                    </div>
-                </>
-            ) : (
-                <>
-                </>
-            )}
         </div>
     );
 }

@@ -26,10 +26,10 @@ export default function Header({ handlePageChange }) {
             <> */}
           <Nav.Item>
             <Nav.Link
-              href="/profile"
-              onClick={() => handlePageChange("Profile")}
+              href="/myplaces"
+              onClick={() => handlePageChange("MyPlaces")}
             >
-              Profile
+              My Places
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
