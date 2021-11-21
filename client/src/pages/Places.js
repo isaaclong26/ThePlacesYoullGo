@@ -3,7 +3,6 @@ import "../components/css/Places_style.css";
 import Auth from '../utils/auth';
 import { searchCities } from '../utils/API';
 import { Form, Button, Card } from 'react-bootstrap';
-import { SavedCities } from '../pages/SavedPlaces'
 
 const SearchCity = () => {
     const [searchedCities, setSearchedCities] = useState([]);
@@ -71,7 +70,6 @@ const SearchCity = () => {
                 <>
                     <div>
                         <h1>My Places</h1>
-                    <SavedCities />
                     </div>
                 </>
             ) : (
