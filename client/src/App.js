@@ -1,5 +1,4 @@
 import './App.css';
-// import React, { useState } from 'react';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Bucket from './pages/Bucket';
