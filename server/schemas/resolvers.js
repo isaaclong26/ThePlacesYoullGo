@@ -41,6 +41,17 @@ const resolvers = {
         
               return { token, user };
             },
+            saveCity: async(parent, args, context) => {
+              if(context.user) {
+                  const updatedUser = await User.findOneAndUpdate(
+                      {_id: context.user._id},
+                      { $push: { savedCities: args}},
+                      { new: true, runValidators: true }
+                  );
+                  return updatedUser;
+              }
+              throw new Error('Could not save city');
+          },
          },
         
 }

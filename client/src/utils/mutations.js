@@ -25,7 +25,7 @@ export const ADD_USER = gql`
 `;
 
 export const SAVE_CITY = gql`
-    mutation saveCity($city: [String], $country: String, $population: Number) {
+    mutation saveCity($city: [String], $country: String, $population: String) {
         saveCity(city: $city, country: $country, population: $population) {
             _id
             username
