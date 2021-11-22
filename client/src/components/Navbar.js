@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import "./css/navbarstyle.css";
+import Auth from '../utils/auth';
 
 export default function Header({ handlePageChange }) {
   return (
@@ -22,16 +23,8 @@ export default function Header({ handlePageChange }) {
               Places
             </Nav.Link>
           </Nav.Item>
-          {/* {Auth.loggedIn() ? (
-            <> */}
-          <Nav.Item>
-            <Nav.Link
-              href="/myplaces"
-              onClick={() => handlePageChange("MyPlaces")}
-            >
-              My Places
-            </Nav.Link>
-          </Nav.Item>
+          {Auth.loggedIn() ? (
+            <> 
           <Nav.Item>
             <Nav.Link
               href="/bucket"
@@ -40,9 +33,9 @@ export default function Header({ handlePageChange }) {
               Bucket List
             </Nav.Link>
           </Nav.Item>
-          {/* </>
+           </>
           ) : (
-            <> */}
+            <> 
           <Nav.Item>
             <Button variant="outline-secondary"
             className="button-login"
@@ -60,8 +53,8 @@ export default function Header({ handlePageChange }) {
                     </Button>
                 </Nav.Item>
           </Nav.Item>
-          {/* </>
-          )} */}
+           </>
+          )} 
     </Nav>
   );
 }
