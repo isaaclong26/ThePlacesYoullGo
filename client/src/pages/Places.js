@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useMutation } from '@apollo/client';
 import "../components/css/Places_style.css";
 import {SAVE_CITY} from '../utils/mutations';
@@ -15,6 +15,10 @@ const SearchCity = () => {
     const [savedCityIds, setSavedCityIds] = useState(getSavedCityIds());
 
     const [saveCity, {error}] = useMutation(SAVE_CITY);
+
+    useEffect(() => {
+        return () => saveCityIds(savedCityIds);
+      });
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
@@ -38,6 +42,7 @@ const SearchCity = () => {
             }));
 
             setSearchedCities(cityData);
+            console.log(setSearchedCities);
             setSearchInput('');
         } catch (err) {
             console.error(err);
@@ -46,7 +51,7 @@ const SearchCity = () => {
 
     const handleSaveCity = async (cityId) => {
         const cityToSave = searchedCities.find((city) => city.cityId === cityId);
-    
+        console.log(searchedCities);
         try {
           await saveCity({
             variables: { ...cityToSave}

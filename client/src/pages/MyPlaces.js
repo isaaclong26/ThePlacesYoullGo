@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import {QUERY_ME} from '../utils/queries';
-import { Jumbotron, Container, CardColumns, Card } from 'react-bootstrap';
+import { Container, Card } from 'react-bootstrap';
 
 const SavedCities = () => {
   const { loading, data } = useQuery(QUERY_ME);

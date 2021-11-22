@@ -2,7 +2,7 @@
 
 ### Github Repo : https://github.com/isaaclong26/ThePlacesYoullGo
 
-### Deployed App on Heroku : 
+### Deployed App on Heroku : https://quiet-everglades-92557.herokuapp.com/
 
 ## Description 
 
