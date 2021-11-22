@@ -12,12 +12,17 @@ export const QUERY_USER = gql`
 `;
 
 export const QUERY_ME = gql`
-  query me {
-     savedCities {
-       cityId
-       city
-       country
-       population
-     }
+ {
+     me {
+       id
+       username
+       email
+       savedCities {
+        cityId
+        city
+        country
+        population
+       }
     }
+}
 `;
