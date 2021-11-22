@@ -36,7 +36,7 @@ export default function Header({ handlePageChange }) {
 
             <Button variant="outline-secondary"
               className="button-login"
-              href="/home"
+              href="/"
               onClick={Auth.logout}>Logout
             </Button> 
           </>
